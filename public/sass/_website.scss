@@ -1,0 +1,66 @@
+/**
+ * @author Steven Bsz
+ */
+
+.first-section {
+	background-color: #134954;
+	padding-top: 110px;
+	padding-bottom: 50px;
+	z-index: 20;
+	position: relative;
+	overflow: hidden;
+
+	.logo {
+		height: 100%;
+		text-align: center;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.presentation {
+		color: #FFFFFF;
+		margin-top: 80px;
+		text-align: center;
+
+		.text {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+.second-section {
+	z-index: 99;
+	position: relative;
+	background-color: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	.info {
+		text-align: center;
+	}
+
+	.plus-sign, .equal-sign {
+		color: lighten(#000, 70%);
+		font-weight: 300;
+		font-size: 6em;
+		vertical-align: middle;
+	}
+}
+
+.footer {
+	padding-top: 60px;
+	padding-bottom: 80px;
+	color: #FFFFFF;
+	background: linear-gradient(315deg, rgba(45, 45, 45, 0.9), rgba(45, 45, 45, 0.9)), url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/noisy_grid.png);
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 0 5px 3px -3px rgba(0, 0, 0, 0.1);
+
+	a {
+		color: $link-color;
+
+		&:hover {
+			color: darken($link-color, 15%);
+		}
+	}
+}

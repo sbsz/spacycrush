@@ -1,0 +1,23 @@
+{
+  "name": "SpacyCrushProject",
+  "version": "1.0.2",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.14",
+    "angular-resource": "1.2.14",
+    "angular-sanitize": "1.2.14",
+    "angular-animate": "1.2.14",
+    "angular-route": "1.2.14",
+    "animate.css": "3.0.0",
+    "jquery.transit": "0.9.9",
+    "jquery": "2.1.0"
+  }
+}

@@ -1,0 +1,159 @@
+/**
+ * @author Steven Bsz
+ */
+
+$bg-login-form: rgba(78, 105, 120, 0.5);
+
+.error {
+	p {
+		padding: 5px 14px;
+		color: #FFFFFF;
+		background-color: #E94B3C;
+
+		@include border-radius(2px);
+	}
+}
+.login-form, .register-form {
+	margin-top: 50px;
+	padding: 0 40px 50px 40px;
+
+	background-color: rgba(78, 105, 120, 0.5);
+
+	border-bottom: 1px solid rgba(92, 198, 169, 0.5);
+	border-left: 1px solid rgba(79, 105, 119, 0.3);
+	border-right: 1px solid rgba(79, 105, 119, 0.3);
+	border-top: 1px solid rgba(55, 74, 84, 0.5);
+
+
+	@include border-radius(15px);
+	@include box-shadow(0 0 6px rgba(0,0,0,.3));
+
+	h2 {
+		font-weight: 300;
+		color: rgba(64, 160, 172, 0.72);
+		font-size: 35px;
+		margin-bottom: 50px;
+		margin-top: 10px;
+	}
+
+	.form-group {
+		input[type="text"], input[type="password"] {
+			-webkit-font-smoothing: antialiased;
+			width: 100%;
+			padding: 14px;
+			border: none;
+
+			@include border-radius(2px);
+		}
+
+		.input-error {
+			input {
+				border: 2px #E94B3C solid;
+			}
+
+			span {
+				display: inline-block;
+				padding-left: 10px;
+				margin-top: 5px;
+				color: #E94B3C;
+			}
+		}
+	}
+
+	.submit-button, .register-button {
+		-webkit-font-smoothing: antialiased;
+		color: #FFFFFF;
+		border: none;
+		padding: 14px;
+		@include border-radius(22px);
+		@include single-transition(opacity, 0.3s, ease-in);
+		@include opacity(1);
+	}
+	.submit-button {
+		width: 100%;
+		border-bottom: 1px solid #68DDC1;
+		background-color: #1ABC9C;
+		&:hover {
+			@include opacity(.6);
+		}
+	}
+	.register-button {
+		width: 100%;
+		border-bottom: 1px solid #3D504B;
+		background-color: #333333;
+		&:hover {
+			@include opacity(.6);
+		}
+	}
+}
+// .login-form, .register-form {
+// 	margin-top: 50px;
+// 	padding: 0 40px 50px 40px;
+
+// 	background-color: $bg-login-form;
+
+// 	border-bottom: 1px solid darken($bg-login-form, 10%);
+// 	border-left: 1px solid lighten($bg-login-form, 15%);
+// 	border-right: 1px solid lighten($bg-login-form, 15%);
+// 	border-top: 1px solid lighten($bg-login-form, 30%);
+
+
+// 	@include border-radius(2px);
+// 	@include box-shadow(0 0 6px rgba(0,0,0,.3));
+
+// 	h2 {
+// 		font-weight: 300;
+// 		color: rgba(13, 31, 55, 0.8);;
+// 		font-size: 35px;
+// 		margin-bottom: 50px;
+// 		margin-top: 10px;
+// 	}
+
+// 	.form-group {
+// 		input[type="text"], input[type="password"] {
+// 			-webkit-font-smoothing: antialiased;
+// 			width: 100%;
+// 			padding: 14px;
+// 			border: none;
+
+// 			@include border-radius(2px);
+// 		}
+
+// 		.input-error {
+// 			input {
+// 				border: 2px #E94B3C solid;
+// 			}
+
+// 			span {
+// 				display: inline-block;
+// 				padding-left: 10px;
+// 				margin-top: 5px;
+// 				color: #E94B3C;
+// 			}
+// 		}
+// 	}
+
+// 	.submit-button, .register-button {
+// 		-webkit-font-smoothing: antialiased;
+// 		color: #FFFFFF;
+// 		border: none;
+// 		padding: 14px;
+// 		@include border-radius(2px);
+// 		@include single-transition(opacity, 0.3s, ease-in);
+// 		@include opacity(1);
+// 	}
+// 	.submit-button {
+// 		width: 100%;
+// 		background-color: #1ABC9C;
+// 		&:hover {
+// 			@include opacity(.6);
+// 		}
+// 	}
+// 	.register-button {
+// 		width: 100%;
+// 		background-color: #2C303B;
+// 		&:hover {
+// 			@include opacity(.6);
+// 		}
+// 	}
+// }

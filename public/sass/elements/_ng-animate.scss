@@ -1,0 +1,25 @@
+/**
+ * @author Steven Bsz
+ */
+
+.animate-fade {
+	@include animation(infinite, 1s, fadeIn);
+}
+
+.animate-slide-down.ng-enter {
+	@include animation(infinite, 1s, slideInDown);
+}
+
+.animate-fade-in-down {
+    @include transition(all linear 0.5s);
+    opacity:1;
+  }
+
+  .animate-fade-in-down.ng-hide-add,
+  .animate-fade-in-down.ng-hide-remove {
+    display:block!important;
+  }
+
+  .animate-fade-in-down.ng-hide {
+    opacity:0;
+  }

@@ -1,0 +1,39 @@
+/**
+ * @author Steven Bsz
+ */
+
+.timer-container {
+	margin-top: 100px;
+	text-align: center;
+
+	span {
+		font-size: 25px;
+	}
+
+	.outer-bar {
+		display: block;
+		margin: 0 auto;
+		margin-top: 5px;
+		height: 200px; width: 80px;
+		border: #ccc solid 1px;
+		@include single-transition(background-color 1000ms linear);
+
+		@include border-radius(2px);
+
+		.inner-bar {
+			display: block;
+			height: 100%;
+			background-color: rgba(78, 105, 120, 1);
+		}
+
+		&.top {
+			background-color: #29A44B;
+		}
+		&.middle {
+			background-color: #E67E22;
+		}
+		&.danger {
+			background-color: #E74C3C;
+		}
+	}
+}

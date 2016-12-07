@@ -1,0 +1,16 @@
+/bootstrap/compiled.php
+/vendor
+/node_modules
+/.sass-cache
+/public/bower_components
+/public/.sass-cache
+composer.phar
+composer.lock
+.env.local.php
+.env.php
+.DS_Store
+Thumbs.db
+
+/doc
+
+app/config/database.php

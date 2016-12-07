@@ -1,0 +1,41 @@
+/**
+ * @author Steven Bsz
+ */
+
+.modal {
+
+	overflow-y: hidden;
+
+	.modal-title {
+		font-size: 25px;
+		font-weight: bold;
+	}
+	color: #333;
+	background-color: rgba(51, 51, 51, 0.5);
+
+	.modal-content {
+		background-color: #FFFFFF;
+
+		@include border-radius(4px);
+
+		h4 {
+			color: #1ABC9C;
+		}
+		.modal-body {
+			max-height: 425px;
+			overflow-y: scroll;
+		}
+	}
+
+
+	.btn {
+		border: none;
+		background-color: #1ABC9C;
+		@include border-radius(17px);
+
+		&.btn-default {
+			color: #FFFFFF;
+			background-color: #DC3030;
+		}
+	}
+}

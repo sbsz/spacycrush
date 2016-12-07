@@ -1,0 +1,167 @@
+/**
+ * @author Steven Bsz
+ */
+
+@import "elements/spinner";
+@import "elements/ng-animate";
+@import "elements/modal";
+@import "elements/vertical_progress_bar";
+@import "elements/table";
+
+$chess-size: 631px;
+$size-box-chess: 67px;
+$gutter-box: 1px;
+
+$width-left-side: 170px;
+
+$margin-left-right-part: 20px;
+
+$app-bg-color: #0D1F37;
+
+$bg-login-form: rgba(42, 68, 102, 0.4);
+
+
+body.app {
+	background-color: $app-bg-color;
+	background: image-url('bg.jpg') no-repeat center center fixed;
+	@include background-size(cover);
+}
+
+.error-wrapper {
+
+	.error {
+		z-index: 9999;
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		margin: 0 auto;
+		background-color: #eb2626;
+		text-align: center;
+		padding: 20px 5px;
+		@include box-shadow(0 3px 9px rgba(0, 0, 0, 0.3));
+		color: #FFFFFF;
+		font-weight: normal;
+		border: 1px solid darken(#eb2626, 30%);
+	}
+}
+
+.game {
+	width: $margin-left-right-part + $width-left-side + $chess-size + 30px;
+	padding: 0 em(15px);
+	margin: 0 auto;
+	margin-top: em(5px);
+	height: em($chess-size);
+	max-height: 755px;
+
+	.left-side {
+		padding-top: 45px;
+		color: #FFFFFF;
+		width: $width-left-side;
+		float: left;
+		margin-right: $margin-left-right-part;
+		display: inline;
+		background-color: rgba(78, 105, 120, 0.5);
+		height: 100%;
+		text-align: center;
+
+		@include border-radius(2px);
+
+		.user {
+			position: relative;
+			font-size: 20px;
+			p {
+				margin-bottom: 10px;
+				&.username {
+					color: #3DCB81;
+				}
+
+				span.logout a {
+					position: absolute;
+					display: inline-block;
+					width: 20px; height: 20px;
+					margin-top: 2px;
+					margin-left: 8px;
+					background: image-url('logout.png') center center no-repeat;
+					@include background-size(cover);
+					cursor: pointer;
+				}
+			}
+		}
+
+		.score {
+			margin-top: 40px;
+			color: #1ABC9C;
+			font-size: 40px;
+			font-weight: bold;
+			@include text-shadow(0 5px rgba(22, 33, 48, 0.5));
+		}
+	}
+
+	.right-side {
+		width: em($chess-size);
+		height: 100%;
+		padding: 10px;
+		float: left;
+		display: inline;
+		background-color: rgba(78, 105, 120, 0.5);
+
+		@include border-radius(2px);
+	}
+}
+
+.box {
+	height: $size-box-chess;
+	width: $size-box-chess;
+	margin-right: em($gutter-box);
+	margin-bottom: em($gutter-box);
+	float: left;
+	display: inline;
+	&.last{
+		float: right;
+		margin-right: 0;
+		display: inline;
+	}
+	&.in-last-row {
+		margin-bottom: 0;
+	}
+	&.type-1 {
+		background: image-url('astronaut.png') no-repeat top;
+
+		&.selected {
+			background-image: image-url('astronaut_selected.png');
+		}
+	}
+
+	&.type-2 {
+		background: image-url('moon.png') no-repeat top;
+
+		&.selected {
+			background-image: image-url('moon_selected.png');
+		}
+	}
+
+	&.type-3 {
+		background: image-url('alien.png') no-repeat top;
+
+		&.selected {
+			background-image: image-url('alien_selected.png');
+		}
+	}
+
+	&.type-4 {
+		background: image-url('planet.png') no-repeat top;
+
+		&.selected {
+			background-image: image-url('planet_selected.png');
+		}
+	}
+
+	&.type-5 {
+		background: image-url('rocket.png') no-repeat top;
+
+		&.selected {
+			background-image: image-url('rocket_selected.png');
+		}
+	}
+
+}
